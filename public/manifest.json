@@ -1,15 +1,31 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
+  "name": "Chalga Meter",
+  "version": "1.0",
+  "description": "How chalga are you?",
+  "background": {
+      "scripts": ["../shared/utils/background.js"],
+      "persistent": false
+  },
+  "browser_action": {
+      "default_popup": "index.html"
+  },
+  "permissions": [
+      "https://*.youtube.com/*",
+      "http://*.youtube.com/*",
+      "https://*.google.com/*",
+      "http://*.google.com/*",
+      "https://*.vbox7.com/*",
+      "http://*.vbox7.com/*",
+      "tabs",
+      "activeTab",
+      "storage",
+      "webNavigation"
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons": {
+    "16": "../src/assets/images/icon-16.png",
+    "48": "../src/assets/images/icon-48.png",
+    "128": "../src/assets/images/icon-128.png"
+  },
+  "manifest_version": 2
 }
