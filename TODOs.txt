@@ -1,0 +1,2 @@
+1. Find a way to copy certain folders to /build in order to have background data processing outside of the webpack bundled modules
+2. Get a sample app up and running with both reactjs and background scripts
